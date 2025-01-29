@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost-Effective Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cost-Effective Analyzer</h1>
+        
+        <div class="input-section">
+            <input type="text" id="itemName" placeholder="Enter Cost Item">
+            <input type="number" id="itemCost" placeholder="Enter Cost Value">
+            <button onclick="addItem()">Add Cost</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Cost ($)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="costTable"></tbody>
+        </table>
+
+        <canvas id="costChart"></canvas>
+        
+        <button onclick="downloadChart()">Download Graph</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
